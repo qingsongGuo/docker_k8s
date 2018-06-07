@@ -17,7 +17,11 @@ k8s 安装时，会去google下载镜像。导致安装会卡住很长时间，�
 
 下载的镜像包括：
 
-  k8s.gcr.io/etcd-amd64:3.1.12 \n
-  k8s.gcr.io/kube-apiserver-amd64:v1.10.4 \n
-  k8s.gcr.io/kube-controller-manager-amd64:v1.10.4 \n
-  k8s.gcr.io/kube-scheduler-amd64:v1.10.4 \n
+  k8s.gcr.io/etcd-amd64:3.1.12
+  
+  k8s.gcr.io/kube-apiserver-amd64:v1.10.4
+  
+  k8s.gcr.io/kube-controller-manager-amd64:v1.10.4
+  
+  k8s.gcr.io/kube-scheduler-amd64:v1.10.4
+
