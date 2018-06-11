@@ -9,11 +9,13 @@ k8s 安装时，会去google下载镜像。导致安装会卡住很长时间，�
 安装k8s 步骤 （ubuntu）
 
 1. 安装docker
+
 	apt-get update
 	apt-get install -y docker.io
 	
 	
 2. 安装 kubeadm,kubelet,kubectl
+	
 	
 apt-get update && apt-get install -y apt-transport-https curl
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -23,8 +25,12 @@ EOF
 apt-get update
 apt-get install -y kubelet kubeadm kubectl
 	
+	
 3. kubeadm 初始化 master节点。初始化master节点，需要从国外下载所需镜像
+
 	kubeadm init --pod-network-cidr=10.244.0.0/16  (使用flannel网络方案)
+
+
 
 
 
